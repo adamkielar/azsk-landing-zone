@@ -14,8 +14,8 @@
       "name": "b6ebd5d0-843d-5262-a6e2-b96f4860255a",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "Deploy-VMSS-Monitoring",
+        "ObjectType": "ServicePrincipal",
         "PrincipalId": "ac7ad4d7-f03d-4c03-92cf-041887b6e326",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"

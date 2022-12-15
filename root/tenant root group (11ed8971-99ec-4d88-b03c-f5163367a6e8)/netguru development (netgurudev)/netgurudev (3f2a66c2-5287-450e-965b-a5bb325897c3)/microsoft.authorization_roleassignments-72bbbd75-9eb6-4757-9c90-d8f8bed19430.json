@@ -14,8 +14,8 @@
       "name": "72bbbd75-9eb6-4757-9c90-d8f8bed19430",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "MS-PIM",
+        "ObjectType": "ServicePrincipal",
         "PrincipalId": "487bff3c-f652-44e6-986b-629372ac7741",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
         "RoleDefinitionName": "User Access Administrator"

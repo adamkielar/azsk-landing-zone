@@ -14,8 +14,8 @@
       "name": "384709b7-1023-47fa-b4f9-74cd0c52ecc2",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "landing-zone",
+        "ObjectType": "ServicePrincipal",
         "PrincipalId": "356c10f6-2e69-4d71-8066-0b4f7036b144",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"

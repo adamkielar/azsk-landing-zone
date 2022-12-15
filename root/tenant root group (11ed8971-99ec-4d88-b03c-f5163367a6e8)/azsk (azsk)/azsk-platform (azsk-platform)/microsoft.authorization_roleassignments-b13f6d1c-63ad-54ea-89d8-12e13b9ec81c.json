@@ -14,8 +14,8 @@
       "name": "b13f6d1c-63ad-54ea-89d8-12e13b9ec81c",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "Deploy-Log-Analytics",
+        "ObjectType": "ServicePrincipal",
         "PrincipalId": "57cbaa1a-16fa-4d71-aa70-08bdafe02a3c",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
         "RoleDefinitionName": "Contributor"
