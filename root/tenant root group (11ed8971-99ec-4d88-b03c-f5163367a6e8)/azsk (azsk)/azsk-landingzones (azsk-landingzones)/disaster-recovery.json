@@ -25,7 +25,7 @@
         "EnforcementMode": "Default",
         "Parameters": {},
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ac34a73f-9fa5-4067-9247-a3ecae514468",
-        "Scope": "/providers/Microsoft.Management/managementGroups/azsk-platform"
+        "Scope": "/providers/Microsoft.Management/managementGroups/azsk-landingzones"
       }
     }
   ],
