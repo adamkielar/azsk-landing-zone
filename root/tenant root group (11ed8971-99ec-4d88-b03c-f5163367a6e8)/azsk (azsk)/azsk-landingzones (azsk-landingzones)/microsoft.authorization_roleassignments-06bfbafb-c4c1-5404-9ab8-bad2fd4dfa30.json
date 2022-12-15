@@ -14,8 +14,8 @@
       "name": "06bfbafb-c4c1-5404-9ab8-bad2fd4dfa30",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "Deploy-VM-Backup",
+        "ObjectType": "ServicePrincipal",
         "PrincipalId": "89766114-01c3-4688-9e0e-a3f6daa5007c",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"

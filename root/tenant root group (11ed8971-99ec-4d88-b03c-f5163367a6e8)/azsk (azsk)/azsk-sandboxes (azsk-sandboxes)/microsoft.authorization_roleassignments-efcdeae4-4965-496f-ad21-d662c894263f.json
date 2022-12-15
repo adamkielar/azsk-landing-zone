@@ -14,8 +14,8 @@
       "name": "efcdeae4-4965-496f-ad21-d662c894263f",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "Adam Kielar",
+        "ObjectType": "User",
         "PrincipalId": "65289ca6-6187-4a88-b187-a989742203f3",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"

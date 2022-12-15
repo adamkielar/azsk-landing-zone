@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "ef6f04225f824678a5bb85a5",
+      "apiVersion": "2022-06-01",
+      "location": "eastus",
+      "identity": {
+        "PrincipalId": "3f189faf-3d0a-4a6d-8f3f-512dfba9dc1d",
+        "TenantId": "11ed8971-99ec-4d88-b03c-f5163367a6e8",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Description": null,
+        "DisplayName": "Configure disaster recovery on virtual machines by enabling replication via Azure Site Recovery",
+        "EnforcementMode": "Default",
+        "NonComplianceMessages": [
+          {
+            "Message": "site-recovery",
+            "PolicyDefinitionReferenceId": null
+          }
+        ],
+        "NotScopes": [],
+        "Parameters": {
+          "cacheStorageAccountId": {
+            "value": ""
+          },
+          "recoveryNetworkId": {
+            "value": "Site-recovery-target-RG-asr-vnet-asr"
+          },
+          "sourceRegion": {
+            "value": "westeurope"
+          },
+          "targetRegion": {
+            "value": "northeurope"
+          },
+          "targetResourceGroupId": {
+            "value": "/subscriptions/6c1c3eeb-81b3-42f9-ba3f-9790b599f601/resourcegroups/Site-recovery-target-RG-asr"
+          },
+          "targetZone": {
+            "value": ""
+          },
+          "vaultId": {
+            "value": "/subscriptions/6c1c3eeb-81b3-42f9-ba3f-9790b599f601/resourceGroups/Site-recovery-vault-RG-asr/providers/Microsoft.RecoveryServices/vaults/Site-recovery-vault-RG-asrsite-recoveryVault-asr"
+          },
+          "vaultResourceGroupId": {
+            "value": "/subscriptions/6c1c3eeb-81b3-42f9-ba3f-9790b599f601/resourcegroups/Site-recovery-vault-RG-asr"
+          }
+        },
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ac34a73f-9fa5-4067-9247-a3ecae514468",
+        "Scope": "/subscriptions/6c1c3eeb-81b3-42f9-ba3f-9790b599f601"
+      }
+    }
+  ],
+  "outputs": {}
+}

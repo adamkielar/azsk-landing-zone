@@ -14,8 +14,8 @@
       "name": "095e6531-b11d-561c-85ce-9f22b5d9e320",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "Deploy-SQL-Threat",
+        "ObjectType": "ServicePrincipal",
         "PrincipalId": "c6999ec3-81cb-4201-97d5-4f2b6899c1b7",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"

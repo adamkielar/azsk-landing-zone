@@ -14,8 +14,8 @@
       "name": "e4351249-918d-4f58-acdb-a4319dacb043",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "aosk",
+        "ObjectType": "User",
         "PrincipalId": "0bb85bd3-1837-4082-8d26-c4a69ea0564b",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
         "RoleDefinitionName": "Reader"

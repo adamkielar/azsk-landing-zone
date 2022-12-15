@@ -11,14 +11,14 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/roleAssignments",
-      "name": "0e17bf18-1981-5bf1-8795-72febd1fa513",
+      "name": "1fadc2f5-caa8-425d-9b83-720fb34922b3",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": "Enforce-TLS-SSL",
+        "DisplayName": "60410bf1424d4099ae8b8d82",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "8d1e922a-be5e-4735-88e4-f834d19969db",
-        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
-        "RoleDefinitionName": "Owner"
+        "PrincipalId": "b2d36505-fe70-4f62-9f6a-f755d82524e6",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+        "RoleDefinitionName": "Virtual Machine Contributor"
       }
     }
   ],
