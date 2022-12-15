@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Disaster-recovery",
+      "apiVersion": "2021-06-01",
+      "location": "westeurope",
+      "identity": {
+        "PrincipalId": "24d481f5-737c-4f94-a1d0-84fec36665fb",
+        "TenantId": "11ed8971-99ec-4d88-b03c-f5163367a6e8",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Description": "Enforce backup for all virtual machines by deploying a recovery services vault in the same location and resource group as the virtual machine. Doing this is useful when different application teams in your organization are allocated separate resource groups and need to manage their own backups and restores. You can optionally exclude virtual machines containing a specified tag to control the scope of assignment. See https://aka.ms/AzureVMAppCentricBackupExcludeTag.",
+        "DisplayName": "Configure backup on virtual machines without a given tag to a new recovery services vault with a default policy",
+        "EnforcementMode": "Default",
+        "Parameters": {},
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ac34a73f-9fa5-4067-9247-a3ecae514468",
+        "Scope": "/providers/Microsoft.Management/managementGroups/azsk-platform"
+      }
+    }
+  ],
+  "outputs": {}
+}
