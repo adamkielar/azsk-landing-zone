@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-Resource-Diag",
+      "apiVersion": "2022-06-01",
+      "location": "westeurope",
+      "identity": {
+        "PrincipalId": "52955e77-df8d-4b2e-b61e-6865ecb1f846",
+        "TenantId": "11ed8971-99ec-4d88-b03c-f5163367a6e8",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Description": "This policy set deploys the configurations of application Azure resources to forward diagnostic logs and metrics to an Azure Log Analytics workspace. See the list of policies of the services that are included",
+        "DisplayName": "Deploy Diagnostic Settings to Azure Services",
+        "EnforcementMode": "Default",
+        "NonComplianceMessages": null,
+        "NotScopes": null,
+        "Parameters": {
+          "logAnalytics": {
+            "value": "/subscriptions/6c1c3eeb-81b3-42f9-ba3f-9790b599f601/resourceGroups/azsk-mgmt/providers/Microsoft.OperationalInsights/workspaces/azsk-law"
+          }
+        },
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/azsk/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diagnostics-LogAnalytics",
+        "Scope": "/providers/Microsoft.Management/managementGroups/azsk"
+      }
+    }
+  ],
+  "outputs": {}
+}

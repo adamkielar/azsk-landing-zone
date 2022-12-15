@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-Log-Analytics",
+      "apiVersion": "2022-06-01",
+      "location": "westeurope",
+      "identity": {
+        "PrincipalId": "57cbaa1a-16fa-4d71-aa70-08bdafe02a3c",
+        "TenantId": "11ed8971-99ec-4d88-b03c-f5163367a6e8",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Description": "Deploy resource group containing Log Analytics workspace and linked automation account to centralize logs and monitoring. The automation account is aprerequisite for solutions like Updates and Change Tracking.",
+        "DisplayName": "Configure Log Analytics workspace and automation account to centralize logs and monitoring",
+        "EnforcementMode": "Default",
+        "NonComplianceMessages": null,
+        "NotScopes": null,
+        "Parameters": {
+          "automationAccountName": {
+            "value": "azsk-aauto"
+          },
+          "automationRegion": {
+            "value": "westeurope"
+          },
+          "dataRetention": {
+            "value": "30"
+          },
+          "rgName": {
+            "value": "azsk-mgmt"
+          },
+          "workspaceName": {
+            "value": "azsk-law"
+          },
+          "workspaceRegion": {
+            "value": "westeurope"
+          }
+        },
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8e3e61b3-0b32-22d5-4edf-55f87fdb5955",
+        "Scope": "/providers/Microsoft.Management/managementGroups/azsk-platform"
+      }
+    }
+  ],
+  "outputs": {}
+}
