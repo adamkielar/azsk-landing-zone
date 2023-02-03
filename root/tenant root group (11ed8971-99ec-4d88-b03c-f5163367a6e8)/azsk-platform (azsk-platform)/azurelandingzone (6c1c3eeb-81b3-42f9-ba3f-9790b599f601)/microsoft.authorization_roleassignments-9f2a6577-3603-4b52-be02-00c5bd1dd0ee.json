@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/roleAssignments",
-      "name": "ca1e7ad2-a9ad-4b45-a566-6a5b6e883ec5",
+      "name": "9f2a6577-3603-4b52-be02-00c5bd1dd0ee",
       "apiVersion": "2022-04-01",
       "properties": {
         "DisplayName": "ZZZ - Netguru Admins",

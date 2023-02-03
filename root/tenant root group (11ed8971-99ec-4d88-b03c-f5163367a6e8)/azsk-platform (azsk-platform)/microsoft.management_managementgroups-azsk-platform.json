@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Management/managementGroups",
+      "name": "azsk-platform",
+      "apiVersion": "2021-04-01",
+      "scope": "/",
+      "properties": {
+        "displayName": "azsk-platform",
+        "details": {
+          "parent": {
+            "id": "/providers/Microsoft.Management/managementGroups/11ed8971-99ec-4d88-b03c-f5163367a6e8"
+          }
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "AzOps-microsoft.management_managementgroups-nested",
+      "location": "[deployment().location]",
+      "properties": {
+        "mode": "Incremental",
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "resources": [
+            {
+              "type": "Microsoft.Management/managementGroups/subscriptions",
+              "apiVersion": "2021-04-01",
+              "name": "azsk-platform/6c1c3eeb-81b3-42f9-ba3f-9790b599f601",
+              "scope": "/"
+            }
+          ],
+          "outputs": {}
+        }
+      },
+      "dependsOn": [
+        "Microsoft.Management/managementGroups/azsk-platform"
+      ]
+    }
+  ],
+  "outputs": {}
+}

@@ -14,8 +14,8 @@
       "name": "bb543e57-688d-477a-b4dc-55ad5bd27b71",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": null,
-        "ObjectType": "Unknown",
+        "DisplayName": "ZZZ - Netguru Developers",
+        "ObjectType": "Group",
         "PrincipalId": "e8d40163-0fa7-423e-9549-206c77db11cf",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
         "RoleDefinitionName": "Owner"

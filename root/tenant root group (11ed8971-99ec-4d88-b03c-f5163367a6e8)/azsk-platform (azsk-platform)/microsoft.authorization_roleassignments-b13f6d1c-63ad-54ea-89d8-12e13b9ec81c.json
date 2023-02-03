@@ -11,14 +11,14 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/roleAssignments",
-      "name": "ca1e7ad2-a9ad-4b45-a566-6a5b6e883ec5",
+      "name": "b13f6d1c-63ad-54ea-89d8-12e13b9ec81c",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": "ZZZ - Netguru Admins",
-        "ObjectType": "Group",
-        "PrincipalId": "ee25dab8-391c-4547-b197-fc528767708f",
-        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
-        "RoleDefinitionName": "Owner"
+        "DisplayName": "Deploy-Log-Analytics",
+        "ObjectType": "ServicePrincipal",
+        "PrincipalId": "57cbaa1a-16fa-4d71-aa70-08bdafe02a3c",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+        "RoleDefinitionName": "Contributor"
       }
     }
   ],
